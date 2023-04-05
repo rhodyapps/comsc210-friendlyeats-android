@@ -12,7 +12,7 @@ import com.google.firebase.firestore.*
  * many times as the user scrolls.
  */
 abstract class FirestoreAdapter<VH : RecyclerView.ViewHolder>(private var query: Query) :
-        RecyclerView.Adapter<VH>(),
+    RecyclerView.Adapter<VH>(),
     EventListener<QuerySnapshot> {
     override fun onEvent(documentSnapshots: QuerySnapshot?, e: FirebaseFirestoreException?) {
 
